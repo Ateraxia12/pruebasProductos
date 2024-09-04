@@ -146,6 +146,10 @@
 
 @media (max-width: 480px) {
     /* … */
+
+    .container-product{
+      gap: 20px;
+  }
     .card{
       width: 150px;
       height: 200px;
