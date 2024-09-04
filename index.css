@@ -150,6 +150,14 @@
       width: 100px;
       height: 150px;
     }
+
+    .card__title {      
+      font-size: 10px;
+
+    }
+    .card__description{
+      font-size: 10px;
+    }
     .section-produtos{
         height: 100%;
     }
