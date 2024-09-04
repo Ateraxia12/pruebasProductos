@@ -51,6 +51,7 @@
 
   /* --------------PRODUCTOS CULTIVA MARKET----- */
   .section-carga{
+    margin-top: 40px;
     height: 600px;
     background-color: #333;
     display: flex;
