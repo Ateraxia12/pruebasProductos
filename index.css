@@ -74,7 +74,18 @@
     gap: 30px;
 }
 
+.img-productos{
+  height: 230px;
+}
+.boton{
+  margin-top: 5px;
+  width: 200px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 .card {
+  flex-direction: column;
     position: relative;
     width: 200px;
     height: 250px;
@@ -149,8 +160,13 @@
 
     .container-product{
       gap: 20px;
+      
+  }
+  .img-productos{
+    height: 80%;
   }
     .card{
+      flex-direction: column;
       width: 150px;
       height: 200px;
       margin-left: 1%;
@@ -158,7 +174,7 @@
     }
 
     .card__title {      
-      font-size: 10px;
+      font-size: 15px;
 
     }
     .card__description{
