@@ -50,7 +50,7 @@
   }
 
   /* --------------PRODUCTOS CULTIVA MARKET----- */
-  .section-carga{
+  .section-produtos{
     margin-top: 40px;
     height: 600px;
     background-color: #333;
@@ -124,3 +124,10 @@
     line-height: 1.4;
   }
   
+  /* ----------- footer-1*/
+
+.footer-1{
+    height: 50px;
+    background-image: url(images/fondo-header.jfif);
+
+}
