@@ -147,8 +147,10 @@
 @media (max-width: 480px) {
     /* … */
     .card{
-      width: 100px;
-      height: 150px;
+      width: 150px;
+      height: 200px;
+      margin-left: 1%;
+      margin-right: 1%;
     }
 
     .card__title {      
@@ -160,5 +162,6 @@
     }
     .section-produtos{
         height: 100%;
+        
     }
   }
