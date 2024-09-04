@@ -1,9 +1,63 @@
 *{
     margin: 0;
+    font-family: Arial, sans-serif;
 }
+
 .header-1{
     height: 150px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     background-image: url(images/fondo-header.jfif);
+}
+.CultivaMarket{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0eb925be;
+}
+.logo-CultivaMarket{
+  height: 100px;
+  border-radius: 45%;
+  margin-left: 20px;
+  
+}
+.Eslogan-CultivaMarket{
+  height: 60px;
+}
+.container-buscador{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.buscador {
+   height: 30px;
+   width: 500px;
+   border-radius: 5px;
+   border: none;
+}
+.buscador::placeholder{
+  padding-left: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+   
+}
+
+li.hidden {
+    display: none;
+}
+
+/* ------------ */
+.header-2{
+  display: flex;
+  justify-content: space-around;
 }
 
 .loading-wave {
@@ -51,7 +105,6 @@
 
   /* --------------PRODUCTOS CULTIVA MARKET----- */
   .section-produtos{
-    margin-top: 40px;
     height: 100%;
     background-color: #333;
     display: flex;
@@ -154,7 +207,12 @@
     background-image: url(images/fondo-header.jfif);
 
 }
+@media (min-width: 1200px) {
+  .boton{
+    display: none;
+  }
 
+}
 @media (max-width: 480px) {
     /* … */
 
@@ -184,4 +242,7 @@
         height: 100%;
         
     }
+    
   }
+
+  /* ----------------------------- */
