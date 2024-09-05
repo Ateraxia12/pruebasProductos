@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 *{
     margin: 0;
     font-family: Arial, sans-serif;
@@ -12,9 +14,12 @@
 }
 .CultivaMarket{
   display: flex;
+  height: 110px;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
   color: #0eb925be;
+  background-color: #fff;
 }
 .logo-CultivaMarket{
   height: 100px;
