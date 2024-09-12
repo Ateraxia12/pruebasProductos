@@ -5,59 +5,87 @@
     font-family: Arial, sans-serif;
 }
 
-.header-1{
-    height: 150px;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    background-image: url(images/fondo-header.jfif);
-}
-.CultivaMarket{
+
+.header-principal {
   display: flex;
-  height: 110px;
-  border-radius: 10px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  color: #0eb925be;
-  background-color: #fff;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  border-bottom: 2px solid #e0e0e0;
 }
-.logo-CultivaMarket{
-  height: 100px;
-  border-radius: 45%;
-  margin-left: 20px;
-  
+
+.img-logo {
+  height: 80px;
+  width: 90px;
+  border-radius: 40%;
 }
-.Eslogan-CultivaMarket{
-  height: 60px;
-}
-.container-buscador{
+
+.nav ul {
+  list-style: none;
   display: flex;
-  justify-content: center;
+  gap: 20px;
+}
+
+.nav ul li {
+  display: inline;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.nav ul li a:hover {
+  color: #007bff;
+}
+
+.search-bar {
+  display: flex;
   align-items: center;
   gap: 10px;
 }
-.buscador {
-   height: 30px;
-   width: 300px;
-   border-radius: 5px;
-   border: none;
-}
-.buscador::placeholder{
-  padding-left: 20px;
+
+.search-bar input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
 }
 
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-li {
-   
+.search-bar button:hover {
+  background-color: #0056b3;
 }
 
-li.hidden {
-    display: none;
+.header-icons {
+  display: flex;
+  gap: 15px;
 }
+
+.header-icons .icon img {
+  height: 30px;
+  cursor: pointer;
+}
+
+.header-icons .icon img:hover {
+  opacity: 0.7;
+}
+
+.img-card{
+  height: 30px;
+}
+
 
 /* ------------ */
 .header-2{
@@ -110,7 +138,8 @@ li.hidden {
 
   /* --------------PRODUCTOS CULTIVA MARKET----- */
   .section-produtos{
-    height: 100%;
+
+    height: 500px;
     background-color: #333;
     display: flex;
     flex-wrap: wrap;
@@ -120,6 +149,19 @@ li.hidden {
     background-image: url(images/Foto-fondo.jpg);
     background-size: cover;
 }
+
+#itemsList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.li-product{
+  list-style: none;
+}
+
 
 .container-product{
     margin-top: 40px;
@@ -214,101 +256,8 @@ li.hidden {
 }
 
 
-/* Mostrar el botón de hamburguesa y ocultar el menú en pantallas pequeñas */
- 
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #9deca4;
-  }
-  
-  .nav-links.active {
-      display: flex;
-  }
-  
-  .menu-toggle {
-      display: flex;
-  }
-    
-  
-
-  /* ----------------------------- */
-  .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
-}
-
-/* Estilos del menú de navegación */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 1rem;
-}
-
-/* Estilos del botón de la hamburguesa */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  position: relative; /* Para asegurar que el botón se mantenga en su lugar */
-  z-index: 1001; /* Asegura que el botón esté sobre otros elementos */
-}
-
-.menu-toggle .bar {
-  width: 20px;
-  height: 3px;
-  background-color: #000000;
-  margin: 5px 0;
-}
-
-/* Estilos del menú de navegación */
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  margin: 0 1rem;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-/* Estilos para el menú desplegable */
-.nav-links {
-  position: fixed; /* Fija el menú en la pantalla */
-  top: 0;
-  right: 0;
-  width: 250px; /* Ancho del menú desplegable */
-  height: 100%; /* Ocupa toda la altura de la pantalla */
-  background-color: #333;
-  transform: translateX(100%); /* Oculta el menú fuera de la pantalla */
-  transition: transform 0.3s ease; /* Transición suave para la apertura/cierre del menú */
-  z-index: 1000; /* Asegura que el menú esté sobre otros contenidos */
-}
-
-.nav-links.active {
-  transform: translateX(0); /* Muestra el menú cuando está activo */
-}
-
 @media (min-width: 1200px) {
-  .boton{
+  .button-ver-detalles{
     display: none;
   }
   .nav-links {
@@ -318,25 +267,6 @@ li.hidden {
     background-color: #ffffff;
     border-radius: 5px;
 }
-
-.nav-links.active {
-    display: flex;
-}
-
-.nav-links li a:hover{
-  background-color: #777;
-}
-
-.menu-toggle {
-    display: flex;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-}
-
-
 
 
 }

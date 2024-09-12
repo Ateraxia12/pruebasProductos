@@ -7,284 +7,90 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   <header>
+  <header>
     
-   </header>
+  </header>
 
-    <header class="header-1">
-      
-      <div class="CultivaMarket">
-        <img class="logo-CultivaMarket" src="images/CultivaMarket-logo-solo.jpg" alt="logo">
-        <h1 class="h1-cultivaMarket">CultivaMarket</h1>
-      </div>
+  <header class="header-principal">
+    <div class="logo"></div>
+        <img class="img-logo" src="images/CultivaMarket-logo-solo.jpg" alt="Logo Tienda">
+    </div>
 
-      <div class="container-buscador">
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Novedades</a></li>
+        </ul>
+    </nav>
 
-        <input class="buscador" type="text" id="filterInput" placeholder="Filtra por nombre...">
-      </div>
+    <div class="search-bar">
+        <input type="text" id="filterInput-1" placeholder="Buscar productos...">
+        <button>Buscar</button>
+    </div>
 
-      <div class="menu-hamburguesa">
-        <nav class="navbar">
-          <div class="menu-toggle" id="menu-toggle">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-          </div>
-          <ul class="nav-links" id="nav-links">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Sobre Nosotros</a></li>
-              <li><a href="#">Contacto</a></li>
-          </ul>
-      </nav>
-      </div>
-      
-    </header>
-    <!-- ------- -->
-    <header class="header-2">
-      <h2 class="h2-">Productos</h2>
-      <div>
-        <input class="buscador-2" type="text" id="filterInput-2" placeholder="Filtra por nombre...">
-      </div>
-      
-      
-    </header>
-<section class="section-produtos">
+    <div class="header-icons">
+        <a href="#" class="icon"><img src="" alt="Cuenta"></a>
+        <a href="#" class="icon"><img src="images/favorito.png" alt="Lista de deseos"></a>
+        <a href="#" class="icon"></a>
+        <a href="templates/carrito.html" ><img src="images/carrito-de-compras.png" class="img-card" alt="Carrito"></a>
+    </div>
+    
+    
+          
+</header>
+   
+   <!-- ------- -->
 
    
-    <ul id="itemsList">
-      <div class="container-product">
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresa es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
 
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/guanabana.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de Guanabana</p>
-              <p class="card__description">Un cultivo de guanabana es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
+   <header class="header-2">
+     <h2 class="h2-">Productos</h2>
+     <div>
+       <input class="buscador-2" type="text" id="filterInput-2" placeholder="Filtra por nombre...">
+     </div>
+     
+     
+   </header>
+<section class="section-produtos">
 
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/naranja.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de naranja</p>
-              <p class="card__description">Un cultivo de naranja es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
+  
+   <ul id="itemsList">
+     <div class="container-product">
+       <li class="li-product">  
+         <div class="card">
+           <img class="img-productos" src="images/Productos_img/img-fresa.jfif" alt="img-fresa">
+           <div class="boton">
+             <button class="button-ver-detalles">Consultar</button>
+           </div>
+           <div class="card__content">
+             <p class="card__title">Cultivo de fresa</p>
+             <p class="card__description">Un cultivo de fresa es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
+             </p>
+           </div>
+         </div>
+       </li>
+     </div>
+       
+   </ul>
 
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/piña.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de piña</p>
-              <p class="card__description">Un cultivo de piña es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-
-        <li class="li-product">  
-          <div class="card">
-            <img class="img-productos" src="images/img-fresa.jfif" alt="img-fresa">
-            <div class="boton">
-              <button class="button-ver-detalles">Consultar</button>
-            </div>
-            <div class="card__content">
-              <p class="card__title">Cultivo de fresa</p>
-              <p class="card__description">Un cultivo de fresas es el proceso de plantar y cuidar fresas, para producir frutos rojos y dulces, gestionando aspectos como suelo, riego y plagas. <a href="#">... ver mas</a>
-              </p>
-            </div>
-          </div>
-        </li>
-
-
-      </div>
-        
-    </ul>
+  
 </section>
 
 
-   
+  
 <footer class="footer-1">
 
 </footer>
 
 
 <section class="section-carga">
-    <div class="loading-wave">
-        <div class="loading-bar"></div>
-        <div class="loading-bar"></div>
-        <div class="loading-bar"></div>
-        <div class="loading-bar"></div>
-      </div>
+   <div class="loading-wave">
+       <div class="loading-bar"></div>
+       <div class="loading-bar"></div>
+       <div class="loading-bar"></div>
+       <div class="loading-bar"></div>
+     </div>
 </section>
 
 </body>

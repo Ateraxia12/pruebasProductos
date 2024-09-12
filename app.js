@@ -1,53 +1,49 @@
 
 
-document.getElementById('filterInput').addEventListener('keyup', function() {
-    const filterValue = this.value.toLowerCase();
-    const items = document.querySelectorAll('#itemsList li');
+// -------------
+
+// ------------------------------
+
+const divProductos = document.querySelector("#itemsList");
+
+const productos = [
     
-    items.forEach(function(item) {
-        const itemText = item.textContent.toLowerCase();
-        if (itemText.includes(filterValue)) {
-            item.classList.remove('hidden');
-        } else {
-            item.classList.add('hidden');
-        }
-    });
-});
+    {
+        nombre: 'Cultivo de maíz',
+        imagen: 'images/Productos_img/Maiz.jfif',
+        descripcion: 'El cultivo de maíz involucra la siembra y el cuidado de las plantas de maíz, asegurando el crecimiento adecuado para obtener mazorcas de calidad.',
+        enlace: '#'
+    },
+    {
+        nombre: 'Cultivo de Naranja',
+        imagen: 'images/Productos_img/naranja.jfif',
+        descripcion: 'El cultivo de naranjas requiere suelos bien drenados y fértiles, clima cálido con temperaturas entre 20-30°C y pleno sol. Se planta en primavera u otoño.',
+        enlace: '#'
+    },
+    {
+        nombre: 'Cultivo de girasol',
+        imagen: 'images/Productos_img/piña.jfif',
+        descripcion: 'El cultivo de girasol se realiza para obtener tanto aceite como semillas comestibles. El cuidado del cultivo implica una gestión adecuada del agua y plagas.',
+        enlace: '#'
+    }
+];
 
-// buscador-2
-document.getElementById('filterInput-2').addEventListener('keyup', function() {
-    const filterValue = this.value.toLowerCase();
-    const items = document.querySelectorAll('#itemsList li');
-    
-    items.forEach(function(item) {
-        const itemText = item.textContent.toLowerCase();
-        if (itemText.includes(filterValue)) {
-            item.classList.remove('hidden');
-        } else {
-            item.classList.add('hidden');
-        }
-    });
-});
-
-// --------------
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-
-    menuToggle.addEventListener('click', (event) => {
-        navLinks.classList.toggle('active');
-        event.stopPropagation(); // Evita que el clic en el botón de hamburguesa cierre el menú inmediatamente
-    });
-
-    // Cierra el menú cuando se hace clic fuera de él
-    document.addEventListener('click', (event) => {
-        if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
-            navLinks.classList.remove('active');
-        }
-    });
-
-    // Evita el cierre del menú si se hace clic dentro del menú
-    navLinks.addEventListener('click', (event) => {
-        event.stopPropagation();
-    });
+productos.forEach((producto) => {
+    const newLi = document.createElement('li'); // Crea un li en lugar de un div
+    newLi.classList.add('li-product');
+    newLi.innerHTML = `
+        <div class="card">
+            <img class="img-productos" src="${producto.imagen}" alt="img-${producto.nombre.toLowerCase()}">
+            <div class="boton">
+                <button class="button-ver-detalles">Consultar</button>
+            </div>
+            <div class="card__content">
+                <p class="card__title">${producto.nombre}</p>
+                <p class="card__description">
+                    ${producto.descripcion} <a href="${producto.enlace}">... ver más</a>
+                </p>
+            </div>
+        </div>
+    `;
+    divProductos.appendChild(newLi);
 });
